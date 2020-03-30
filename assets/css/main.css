@@ -140,6 +140,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			background-color: #0288d1;
 		}
 
 		.icon > .label {
