@@ -13,6 +13,26 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/scripts.js"></script>
 </head>
+
+<script>
+  function showBooks() {
+   var x = document.getElementById("booksHidden");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
+ };
+ function hideBooks() {
+   var x = document.getElementById("booksHidden");
+   if (x.style.display === "block") {
+     x.style.display = "none";
+   } else {
+     x.style.display = "block";
+   }
+ };
+</script>
+
 <body>
   <!-- Navbar -->
   <nav class="navbar">
@@ -248,7 +268,7 @@
         <ul class="align">
           
           <!-- Book 1 -->
-          <li style="margin-bottom: 80px;">
+          <li style="margin-bottom: 50px;">
             <figure class='book'>        
               <!-- Front -->        
               <ul class='hardcover_front'>
@@ -291,7 +311,7 @@
           </li>
           
           <!-- Book 2 -->
-          <li style="margin-bottom: 80px;">
+          <li style="margin-bottom: 50px;">
             <figure class='book'>        
               <!-- Front -->        
               <ul class='hardcover_front'>
@@ -331,13 +351,797 @@
                 <!-- <a href="#">Acquista</a> -->
               </figcaption>
             </figure>
-          </li>  
+          </li> 
 
-        </ul> 
-        
-      <p>Alcuni libri consigliati, la lista completa la trovi <a href="books.html" style="color: #48dbfb;">qui</a>.</p>
+          <div class="align" id="booksHidden" style="display: none;">
+
+              <!-- Book 1 -->
+              <li  style="margin-bottom: 80px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/padre_ricco_padre_povero.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon bestseller">Nº1</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                      <p>Voto</p>
+                      <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star-half" style="color: black;"></a>
+                      </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Padre ricco padre povero. Quello che i ricchi insegnano ai figli sul denaro</h1>
+                    <span>Di Robert T. Kiyosaki</span>
+                    <p>Padre ricco padre povero vi insegnerà a: - Eliminare la convinzione che occorre uno stipendio alto per diventare ricchi - Dimostrare ai genitori che il sistema scolastico non fornisce una preparazione economico-finanziaria...</p>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+              
+              <!-- Book 2 -->
+              <li   style="margin-bottom: 50px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/il_mio_primo_milione_di_dollari.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star-half" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Il mio primo milione di dollari</h1>
+                    <span>Di Paul Rich</span>
+                    <p>Alcuni spesso si chiedono come diventare ricchi e dove poter trovare la formula magica per la ricchezza: non esiste nessuna formula magica, o almeno non in questo libro. Esistono però competenze e nozioni, accessibili a chiunque, che ognuno di noi può apprendere, se lo vuole.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+
+              <!-- Book 3 (vedi sopra nella preview) -->
+    
+              <!-- Book 4 -->
+              <li  style="margin-bottom: 70px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/larte_della_guerra.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>L'arte della guerra</h1>
+                    <span>Di Sun Tzu</span>
+                    <p>Composto nel IV secolo a.C. da un anonimo che si riallacciava alla tradizione della scuola di Sun Tzu, L’arte della guerra (Bingfa) è il trattato di strategia militare più antico, famoso e studiato. Ispira strategie economico-aziendali e si trova sulla scrivania dei più importanti manager del mondo.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 5 -->
+              <li  style="margin-bottom: 80px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/tecniche_di_resistenza_interiore.jpg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Tecniche di resistenza interiore. Sopravvivere alle crisi con la resilienza</h1>
+                    <span>Di Pietro Trabucchi</span>
+                    <p>Prima ancora che economica, la crisi da cui tutti ci sentiamo attraversati si sta rivelando, essenzialmente, interiore. Assistiamo infatti a un progressivo indebolimento delle forze mentali e motivazionali degli individui.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 6 -->
+              <li  style="margin-bottom: 80px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/inostrisoldi.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>I nostri soldi</h1>
+                    <span>Di M. Fracaro</span>
+                    <p>L'eccesso di leggi e commi è la realtà con cui deve confrontarsi l'impresa nazionale alla base di tutte le altre, la famiglia italiana. Cosa si trova dentro questo libro? Tutto quello che serve sapere per scegliere e gestire un mutuo, comprare e vendere casa e andare in pensione al momento giusto.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 7 -->
+              <li  style="margin-bottom: 50px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/chihaspostatoilmioformaggio.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Chi ha spostato il mio formaggio?</h1>
+                    <span>Di Spencer Johnson</span>
+                    <p>Una storiella breve, densa di significati e insegnamenti, che fa comprendere ai lettori l'importanza e il valore del cambiamento, della flessibilità e dell'apertura al nuovo.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 8 -->
+              <li  style="margin-bottom: 50px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/patagoniaexpress.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Patagonia express. Appunti dal sud del mondo</h1>
+                    <span>Di Luis Sepúlveda</span>
+                    <p>Un diario di viaggio. Una "Moleskine" riempita di personaggi particolari scoperti senza difficoltà nell'eccezionale natura della Patagonia.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 9 -->
+              <li  style="margin-bottom: 50px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/greenlights.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Greenlights</h1>
+                    <span>Di Matthew McConaughey</span>
+                    <p>"Sono in questa vita da cinquant'anni, ne scruto l'enigma da quarantadue, e da trentacinque tengo un diario pieno di idee su come risolverlo. Appunti su successi e fallimenti, gioie e dolori, cose che mi hanno stupito o che mi hanno fatto ridere di cuore.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 10 -->
+              <li  style="margin-bottom: 50px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/ilpiugrandevenditoredelmondo.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Il più grande venditore del mondo</h1>
+                    <span>Di Og Mandino</span>
+                    <p>Colui che sa “vendersi” bene, ha fiducia in se stesso e sa affrontare le difficoltà e le sconfitte senza perdersi d’animo.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 11 -->
+              <li  style="margin-bottom: 50px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/lamuccaviola.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>La mucca viola</h1>
+                    <span>Di Seth Godin</span>
+                    <p>Il mondo si è trasformato, ma le imprese non si sono adeguate e non possiamo più affidarci a soluzioni, prodotti e servizi del passato. Oggi bisogna essere straordinari, straordinariamente innovativi, motivati e autentici. Ma come?</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 12 -->
+              <li  style="margin-bottom: 110px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/gliocchidelbosco.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Gli occhi del bosco. Storie di animali e di uomini</h1>
+                    <span>Di Mauro Corona</span>
+                    <p>Al centro della poetica di Mauro Corona c'è il legame indissolubile tra l'uomo e la natura. Legame che le abitudini di vita metropolitane sembrano negare, ma che non può sfuggire all'uomo dei boschi e delle montagne, abituato ad ascoltare i racconti delle rocce su cui arrampica, del legno che intaglia, dello stormire degli alberi e delle orme degli animali.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 13 -->
+              <li  style="margin-bottom: 100px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/anythingyouwant.jpg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Anything You Want: 40 Lessons for a New Kind of Entrepreneur</h1>
+                    <span>Di Derek Sivers</span>
+                    <p>When Derek Sivers started CD Baby, he wasn’t planning on building a major business. He was a successful independent musician who just wanted to sell his CDs online. When no one would help him do it, he set out on his own and built an online store from scratch.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 14 -->
+              <li  style="margin-bottom: 90px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/scrum.jpg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Scrum</h1>
+                    <span>Di Jeff Sutherland</span>
+                    <p>Scrum is the revolutionary approach to project management and team building that has helped to transform everything from software companies to the US military to healthcare in major American hospitals. In this major new book its originator, Jeff Sutherland, explains precisely and step by step how it operates – and how it can be made to work for anyone, anywhere.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 15 -->
+              <li  style="margin-bottom: 80px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/arricchirsicononore.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Arricchirsi con onore: elogio del buon imprenditore</h1>
+                    <span>Di Benedetto Cotrugli</span>
+                    <p>Mentre la finanziarizzazione dell'economia e le susseguenti crisi sembrano aver minato le regole di base degli affari, la riscoperta di un manuale del '400 ci ricorda che esiste anche una maniera "sana e profittevole" di arricchirsi e arricchire la società nel contempo.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 16 -->
+              <li  style="margin-bottom: 70px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/21giorniperunagrandeidea.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>21 giorni per una grande idea</h1>
+                    <span>Di Bryan Mattimore</span>
+                    <p>Se cercate nuove idee originali e pratiche per il vostro business, questo è il libro che fa per voi. Impegnandovi soltanto un'ora al giorno per ventuno giorni, potrete sperimentare strategie innovative e dare struttura al vostro processo creativo.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 17 -->
+              <li  style="margin-bottom: 40px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/lagrandeviadelsamurai.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>La grande via del samurai</h1>
+                    <span>Di Ryuichiro Misaki</span>
+                    <p>Bushidō («Via del guerriero») è il complesso di antiche norme militari e morali che costituivano il codice di condotta dei guerrieri in Giappone.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 18 (vedi sopra nella preview) -->
+    
+              <!-- Book 19 -->
+              <li  style="margin-bottom: 120px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/unapasseggiataneiboschi.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Una passeggiata nei boschi</h1>
+                    <span>Di Bill Bryson</span>
+                    <p>L'Appalachian Trail, che dalla Georgia al Maine taglia quattordici stati americani snodandosi per oltre 3400 chilometri, è il capostipite di tutti i sentieri a lunga percorrenza e dimora di una delle più grandiose foreste della zona temperata del globo. All'età di quarantaquattro anni Bill Bryson, in compagnia dell'amico Stephen Katz, decisamente sovrappeso e fuori forma, si cimenta nell'impresa di percorrere il leggendario sentiero.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+              <!-- Book 20 -->
+              <li  style="margin-bottom: 80px;">
+                <figure class='book'>        
+                  <!-- Front -->        
+                  <ul class='hardcover_front'>
+                    <li>
+                      <img src="images/books/rework.jpeg" alt="" width="100%" height="100%">
+                      <!-- <span class="ribbon new">NEW</span> -->
+                    </li>
+                    <li></li>
+                  </ul>        
+                  <!-- Pages -->        
+                  <ul class='page'>
+                    <li></li>
+                    <li>
+                      <div class="rate">
+                        <p>Voto</p>
+                        <a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a><a class="fas fa-star" style="color: black;"></a>
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>        
+                  <!-- Back -->        
+                  <ul class='hardcover_back'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <ul class='book_spine'>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <figcaption>
+                    <h1>Rework. Manifesto del nuovo imprenditore minimalista</h1>
+                    <span>Di Jason Fried,David Heinemeier Hansson</span>
+                    <p>Zero fondi e un team minuscolo per iniziare. Semplicità, trasparenza, onestà, settimana corta, niente pubblicità, meeting o business pian per continuare. E avere un successo straordinario. È questa la filosofia di Jason Fried e David Heinemeier Hansson, che hanno fondato dal nulla un'azienda di software che va a gonfie vele.</p>
+                    <br>
+                    <!-- <a href="#">Acquista</a> -->
+                  </figcaption>
+                </figure>
+              </li>
+    
+          
+          </div>
+
+        </ul>
+      
+      <p>Visualizza la lista completa.</p>
+      <button onclick="showBooks()" style="color: #48dbfb; border: hidden;">Mostra</button>
+      <button onclick="hideBooks()" style="color: #48dbfb; border: hidden;">Nascondi</button>
+
       </div>
-
     </div>
   </section>
 
