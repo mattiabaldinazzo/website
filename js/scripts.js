@@ -33,6 +33,16 @@ $(document).ready(function(){
     });
   });
 
+  $(function () {
+    $('.ContactEmail').click(function (event) {
+      var email = 'mattiabaldinazzoproject@gmail.com';
+      var subject = 'Info';
+      var emailBody = 'Hi, I am ... and I am interested in...';
+      // var attach = 'path';
+      document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody/*+"?attach="+attach;*/
+    });
+  });
+
   function showBooks() {
     var x = document.getElementById("booksHidden");
     if (x.style.display === "none") {
